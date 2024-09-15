@@ -13,6 +13,11 @@ MealDelights is a Swift-based iOS app that allows users to browse and view detai
 -   **Unit Tests**: Comprehensive test coverage for view models, network interactions, and data parsing.
 -   **Preview Support**: SwiftUI views have preview configurations to visualize UI changes during development.
 
+### App demo
+
+![MealDelights](https://github.com/user-attachments/assets/2cbd2af7-772d-4ca3-8ec0-680e084a86e4)
+
+
 ### App Architecture
 
 1.  **View Models**:
@@ -39,10 +44,6 @@ MealDelights is a Swift-based iOS app that allows users to browse and view detai
     -   **DessertDetailsViewModelTests**: Verifies the fetching of dessert details, including invalid data handling.
     -   **MealCategoriesViewModelTests**: Tests fetching meal categories, handling errors, and filtering invalid categories.
 -   **Mock Network Client**: A mock implementation of  `NetworkClientProtocol`  simulates network responses, allowing for predictable and isolated tests.
-
-### App demo
-
-![MealDelights](https://github.com/user-attachments/assets/2cbd2af7-772d-4ca3-8ec0-680e084a86e4)
 
 
 ### How to Run the App
