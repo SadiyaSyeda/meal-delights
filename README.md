@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-MealDelights is a Swift-based iOS app that allows users to browse and view detailed information about various meals, particularly focusing on desserts. The app is designed with a robust architecture that leverages Swift Concurrency (async/await), modular view models, and a flexible network client architecture. The UI is built using SwiftUI, with custom view modifiers to enhance the design.
+MealDelights is a Swift-based iOS app that allows users to browse and view detailed information about various meals, particularly focusing on desserts. The app is designed in such a way that leverages Swift Concurrency (async/await), modular view models, and a flexible network client architecture. The UI is built using SwiftUI, with custom view modifiers to enhance the design.
 
 ### Key Features
 
@@ -10,6 +10,8 @@ MealDelights is a Swift-based iOS app that allows users to browse and view detai
 -   **Meal Categories**: Displays a list of meal categories.
 -   **Desserts**: Users can browse a list of desserts and view details about each.
 -   **Custom View Modifiers**: Uses  `CustomTitleModifier`  and  `CustomCardModifier`  for consistent styling across the app.
+-   **Image Caching**: The app uses URL-based image loading, with caching enabled to ensure efficient loading of dessert images, reducing network requests and improving performance.
+-   **Nil or Empty Filtering**: The app performs filtering to ensure that meal and category entries with empty or nil values for critical fields like name and id are excluded, ensuring only valid data is displayed to the user. This helps maintain data integrity and avoids displaying incomplete information in the UI.
 -   **Unit Tests**: Comprehensive test coverage for view models, network interactions, and data parsing.
 -   **Preview Support**: SwiftUI views have preview configurations to visualize UI changes during development.
 
@@ -63,6 +65,8 @@ MealDelights is a Swift-based iOS app that allows users to browse and view detai
 -   **Models**: Contains data models such as  `MealCategory`,  `Meal`, and  `DessertDetail`.
 -   **View Models**: Holds view models like  `DessertViewModel`,  `MealCategoriesViewModel`, and  `DessertDetailsViewModel`.
 -   **Views**: SwiftUI views for displaying meals, categories, and meal details.
+-   **Network**: A flexible network client architecture that supports async/await for making API requests, with reusable components for different endpoints and error handling.
+-   **Image Caching**: Implements image caching to reduce redundant network requests and improve performance when loading images across the app.
 -   **Tests**: Unit tests for view models and network interactions using mock data.
 
 ### Preview Configuration
